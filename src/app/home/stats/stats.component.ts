@@ -17,14 +17,14 @@ import {
   templateUrl: './stats.component.html',
   styleUrls: ['./stats.component.css']
 })
-export class StatsComponent implements AfterViewInit, OnDestroy {
+export class StatsComponent implements OnInit, OnDestroy {
   @Input() dynComp: DynamicComponent;
   @ViewChild(ComponentHostDirective) appComponentHost: ComponentHostDirective;
   componentRef: ComponentRef<any>;
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
-  ngAfterViewInit() {
+  ngOnInit() {
     this.loadComponent();
   }
 
@@ -36,7 +36,7 @@ export class StatsComponent implements AfterViewInit, OnDestroy {
     console.log('inside stats component: ', this.dynComp);
     const comp = this.dynComp;
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(comp.component);
-    console.log('host: ', this.appComponentHost);
+    console.log('host: ', this.appComponentHost);  // <-- this is undefined
 
     const viewContainerRef = this.appComponentHost.viewContainerRef;
     viewContainerRef.clear();

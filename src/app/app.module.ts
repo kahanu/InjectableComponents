@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { InjectableComponentService } from './dynamic/services/injectable-component.service';
 import { HomeModule } from './home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,7 +17,6 @@ import { SalesComponent } from './sales/sales.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentHostDirective,
     CustomersComponent,
     OrdersComponent,
     InventoryComponent,
@@ -27,6 +27,7 @@ import { SalesComponent } from './sales/sales.component';
     FormsModule,
     HttpModule,
     HomeModule,
+    SharedModule,
     AppRoutingModule
   ],
   entryComponents: [

@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
 
   select(id: string) {
     this.selectedComponent = this.injectableService.getComponent(id);
+    console.log('selected componenty: ', this.selectedComponent);
   }
 
 }

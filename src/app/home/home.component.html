@@ -3,15 +3,11 @@
     <h1>Company Info</h1>
     <h2>Acme Widgets, Inc.</h2>
     <div><b>Sales Rep: </b> Wile E. Coyote</div>
-  </div>
-  <div class="col-md-4">
-    <app-stats [dynComp]="selectedComponent" *ngIf="selectedComponent"></app-stats>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
     <div class="btn-group" role="group">
       <button type="button" class="btn btn-default" *ngFor="let btn of btns" (click)="select(btn.data.id)">{{ btn.data.btnTitle }}</button>
     </div>
+  </div>
+  <div class="col-md-4">
+    <app-stats [dynComp]="selectedComponent" *ngIf="selectedComponent"></app-stats>
   </div>
 </div>
