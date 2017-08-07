@@ -1,13 +1,28 @@
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-4">
     <h1>Company Info</h1>
     <h2>Acme Widgets, Inc.</h2>
     <div><b>Sales Rep: </b> Wile E. Coyote</div>
     <div class="btn-group" role="group">
-      <button type="button" class="btn btn-default" *ngFor="let btn of btns" (click)="select(btn.data.id)">{{ btn.data.btnTitle }}</button>
+      <button type="button" class="btn btn-default" *ngFor="let comp of components; let idx = index;" (click)="select(idx)">{{ comp.data.btnTitle }}</button>
     </div>
   </div>
   <div class="col-md-4">
-    <app-stats [dynComp]="selectedComponent" *ngIf="selectedComponent"></app-stats>
+     <app-dynamic-content [dynComponents]="components" [selectedIndex]="selectedIndex"></app-dynamic-content> 
+  </div>
+</div> -->
+
+<div class="row">
+  <div class="col-md-3">
+    <h2>Companies</h2>
+    <div class="company-list">
+       <div class="company" *ngFor="let company of companyList" (click)="selectedCompany(company.id)">{{ company.name }}</div> 
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div *ngIf="showCompany">
+      <h3>{{ company.name }}</h3>
+      <p>{{ company.salesRep }}</p>
+    </div>
   </div>
 </div>

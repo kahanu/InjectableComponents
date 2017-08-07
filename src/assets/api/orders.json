@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "companyId": 1,
+        "name": "Dynamite sticks",
+        "quantity": 300,
+        "price": 1400
+    },
+    {
+        "id": 2,
+        "companyId": 1,
+        "name": "Black Power Kegs",
+        "quantity": 20,
+        "price": 800
+    },
+    {
+        "id": 3,
+        "companyId": 1,
+        "name": "Trip wire - 100 Ft",
+        "quantity": 4,
+        "price": 79.95
+    },
+    {
+        "id": 4,
+        "companyId": 1,
+        "name": "Exploding Boulders",
+        "quantity": 3,
+        "price": 75
+    },
+    {
+        "id": 5,
+        "companyId": 1,
+        "name": "Long range Blunderbus",
+        "quantity": 1,
+        "price": 480.50
+    },
+    {
+        "id": 6,
+        "companyId": 2,
+        "name": "Tailor-made Super suit (no cape)",
+        "quantity": 14,
+        "price": 2439.50
+    },
+    {
+        "id": 7,
+        "companyId": 2,
+        "name": "Battle Shield",
+        "quantity": 7,
+        "price": 3596
+    },
+    {
+        "id": 8,
+        "companyId": 2,
+        "name": "Gamma-ray glasses",
+        "quantity": 2,
+        "price": 39.95
+    },
+    {
+        "id": 9,
+        "companyId": 2,
+        "name": "Rocket boots - size 11 1/2",
+        "quantity": 1,
+        "price": 945.29
+    },
+    {
+        "id": 10,
+        "companyId": 2,
+        "name": "Bullet deflecting bracelets (1 pair)",
+        "quantity": 17,
+        "price": 539
+    }
+]
