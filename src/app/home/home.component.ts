@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
    */
   ngOnInit() {
     // this.components = this.injectableService.getComponents();
-    this.getCompanies();
+    // this.getCompanies();
   }
 
   // /**
@@ -37,20 +37,20 @@ export class HomeComponent implements OnInit {
   //   this.selectedIndex = idx;
   // }
 
-  getCompanies() {
-    this.homeService.getCompanies()
-      .subscribe(res => this.companyList = res);
-  }
+  // getCompanies() {
+  //   this.homeService.getCompanies()
+  //     .subscribe(res => this.companyList = res);
+  // }
 
-  selectedCompany(id: number) {
-    console.log('company id: ', id);
-    this.company = this.companyList.find(item => {
-      return item.id === id;
-    });
+  // selectedCompany(id: number) {
+  //   console.log('company id: ', id);
+  //   this.company = this.companyList.find(item => {
+  //     return item.id === id;
+  //   });
 
-    if (this.company) {
-      this.showCompany = true;
-    }
-  }
+  //   if (this.company) {
+  //     this.showCompany = true;
+  //   }
+  // }
 
 }

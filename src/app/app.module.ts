@@ -1,3 +1,4 @@
+import { CompanyModule } from './company/company.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { InjectableComponentService } from './dynamic/services/injectable-component.service';
@@ -28,6 +29,7 @@ import { SalesComponent } from './sales/sales.component';
     FormsModule,
     HttpModule,
     HomeModule,
+    CompanyModule,
     CoreModule,
     SharedModule,
     AppRoutingModule

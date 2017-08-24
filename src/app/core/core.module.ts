@@ -1,3 +1,4 @@
+import { CompanyService } from './../company/company.service';
 import { HomeService } from './../home/home.service';
 import { JsonApiService } from './api/json-api.service';
 import { NgModule } from '@angular/core';
@@ -10,7 +11,8 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   providers: [
     JsonApiService,
-    HomeService
+    HomeService,
+    CompanyService
   ]
 })
 export class CoreModule { }

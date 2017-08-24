@@ -12,7 +12,7 @@
   </div>
 </div> -->
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-3">
     <h2>Companies</h2>
     <div class="company-list">
@@ -22,7 +22,16 @@
   <div class="col-md-5">
     <div *ngIf="showCompany">
       <h3>{{ company.name }}</h3>
-      <p>{{ company.salesRep }}</p>
+      <p><b>Sales Rep:</b> {{ company.salesRep }}</p>
     </div>
   </div>
-</div>
+</div> -->
+
+<p>This is an Angular 4.x demo application that demonstrates how to implement dynamic components in your workflow.</p>
+<h3>What are Dynamic Components?</h3>
+<p>Dynamic components is a concept.  It's a way of instantiating a component (that already exists) and injecting it into another component on the fly. </p>
+<h3>Why is this important?  We can already place a component directive in the HTML of another component.</h3>
+<p>This is true, and this is absolutely useful, but what if you need to change the referenced component based on the parent?  You could use an <code>ngSwitch</code> statement, but that can lead to some maintenance.</p>
+
+
+

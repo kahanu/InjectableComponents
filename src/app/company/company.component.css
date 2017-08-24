@@ -1,0 +1,16 @@
+div.company-list {
+    border: 1px solid #dedede;
+    padding: 10px;
+}
+
+div.company:hover {
+    cursor: pointer;
+    background-color: #E1E2E3;
+}
+
+div.company {
+    border: 1px solid #dedede;
+    padding: 5px;
+    background-color: #EBEFF0;
+    margin-bottom: 5px;
+}
