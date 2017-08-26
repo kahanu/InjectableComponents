@@ -1,2 +1,13 @@
-<h3>{{ data.h1 }}</h3>
-<p>{{ data.content }}</p>
+<!-- <h3>{{ item.h1 }}</h3>
+<p>{{ item.content }}</p> -->
+<h2>Quarterly Sales</h2>
+<table class="table">
+    <tr>
+        <th>Product</th>
+        <th>Sales</th>
+    </tr>
+    <tr *ngFor="let item of sales">
+        <td>{{ item.name }}</td>
+        <td>{{ item.sales }}</td>
+    </tr>
+</table>

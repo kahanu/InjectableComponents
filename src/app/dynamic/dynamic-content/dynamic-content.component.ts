@@ -40,6 +40,7 @@ export class DynamicContentComponent implements OnInit, OnDestroy, OnChanges {
    * Load the selected component.
    */
   loadComponent() {
+    console.log('loading the component...');
     if (!this.selectedIndex) { this.selectedIndex = 0; }
     const selectedComponent = this.dynComponents[this.selectedIndex];
 

@@ -1,3 +1,4 @@
+import { InjectableCompanyService } from './../dynamic/services/injectable-company.service';
 import { CompanyService } from './../company/company.service';
 import { HomeService } from './../home/home.service';
 import { JsonApiService } from './api/json-api.service';
@@ -12,7 +13,8 @@ import { CommonModule } from '@angular/common';
   providers: [
     JsonApiService,
     HomeService,
-    CompanyService
+    CompanyService,
+    InjectableCompanyService
   ]
 })
 export class CoreModule { }

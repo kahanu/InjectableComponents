@@ -2,6 +2,50 @@
     {
         "id": 1,
         "companyId": 1,
-        "name": ""
+        "name": "Dynamite Sticks",
+        "sales": "40"
+    },
+    {
+        "id": 2,
+        "companyId": 1,
+        "name": "Exploding Boulders",
+        "sales": "7"
+    },
+    {
+        "id": 3,
+        "companyId": 1,
+        "name": "Trip wire - 40 feet",
+        "sales": "24"
+    },
+    {
+        "id": 4,
+        "companyId": 1,
+        "name": "Rocket boots",
+        "sales": "2 pair"
+    },
+    {
+        "id": 5,
+        "companyId": 1,
+        "name": "Rope - 100 feet",
+        "sales": "2"
+    },
+    {
+        "id": 6,
+        "companyId": 2,
+        "name": "Kevlar Batarangs",
+        "sales": "20"
+    },
+    {
+        "id": 7,
+        "companyId": 2,
+        "name": "Memory Whips",
+        "sales": "1"
+    },
+    {
+        "id": 8,
+        "companyId": 2,
+        "name": "Web Juice",
+        "sales": "8 gallons"
     }
+
 ]

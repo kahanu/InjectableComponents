@@ -21,7 +21,7 @@ export class JsonApiService {
   }
 
   private getBaseUrl() {
-    return location.protocol + '//' + location.hostname + (location.port ? ':' +location.port : '') + '/'
+    return location.protocol + '//' + location.hostname + (location.port ? ':' +location.port : '') + '/';
   }
 
   private extractData(value: any) {
