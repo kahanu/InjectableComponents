@@ -57,8 +57,8 @@ export class CompanyComponent implements OnInit {
    * @param idx the index of the selected button component
    */
   select(idx: number) {
-    console.log('selected button: ', idx);
-    this.selectedIndex = idx;
+    // Add 1 to the index since the dynamic-content.component doesn't like a 0 index;
+    this.selectedIndex = (idx + 1);
 
   }
 

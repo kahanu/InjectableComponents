@@ -9,3 +9,10 @@ export class ChildItem {
     h1: string;
     content: string;
 }
+
+export class Notary {
+    companyId: number;
+    name: string;
+    address: string;
+    website: string;
+}

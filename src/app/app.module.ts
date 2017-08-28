@@ -11,18 +11,16 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentHostDirective } from './dynamic/component-host.directive';
-import { CustomersComponent } from './customers/customers.component';
-import { OrdersComponent } from './orders/orders.component';
-import { InventoryComponent } from './inventory/inventory.component';
-import { SalesComponent } from './sales/sales.component';
+import { CustomersComponent,
+  SalesComponent,
+  NotaryComponent } from 'app/components/';
 
-@NgModule({
+  @NgModule({
   declarations: [
     AppComponent,
     CustomersComponent,
-    OrdersComponent,
-    InventoryComponent,
-    SalesComponent
+    SalesComponent,
+    NotaryComponent
   ],
   imports: [
     BrowserModule,
@@ -36,11 +34,9 @@ import { SalesComponent } from './sales/sales.component';
   ],
   entryComponents: [
     CustomersComponent,
-    OrdersComponent,
-    InventoryComponent,
-    SalesComponent
+    SalesComponent,
+    NotaryComponent
   ],
-  providers: [InjectableComponentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

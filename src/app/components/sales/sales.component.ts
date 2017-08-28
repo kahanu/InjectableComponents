@@ -1,6 +1,6 @@
-import { JsonApiService } from './../core/api/json-api.service';
-import { ChildItem } from './../shared/models/models';
-import { InjectableComponent } from './../dynamic/interfaces/injectable-component';
+import { JsonApiService } from 'app/core/api/json-api.service';
+import { ChildItem } from 'app/shared/models/models';
+import { InjectableComponent } from 'app/dynamic/interfaces/injectable-component';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -24,13 +24,9 @@ export class SalesComponent implements InjectableComponent, OnInit {
   getSales() {
     this.jsonService.fetch('/sales.json')
       .subscribe(res => {
-        console.log('res sales array: ', res);
-        const filteredArray: any[] = [];
-        res.forEach(element => {
-          console.log(element);
-          if (element.companyId === this.data.companyId) {
-            filteredArray.push(element);
-          }
+        let filteredArray: any[] = [];
+        filteredArray = res.filter(item => {
+          return item.companyId === this.data.companyId;
         });
         this.sales = filteredArray;
       });

@@ -7,9 +7,9 @@ import { Component, OnInit, Input, ViewChild, ComponentRef, ComponentFactoryReso
   templateUrl: './dynamic-content.component.html',
   styleUrls: ['./dynamic-content.component.css']
 })
-export class DynamicContentComponent implements OnInit, OnDestroy, OnChanges {
+export class DynamicContentComponent implements OnDestroy, OnChanges {
   @Input() dynComponents: DynamicComponent[];
-  @Input() selectedIndex = 0;
+  @Input() selectedIndex = -1;
   @ViewChild(ComponentHostDirective) appComponentHost: ComponentHostDirective;
   componentRef: ComponentRef<any>;
 
@@ -23,26 +23,10 @@ export class DynamicContentComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   /**
-   * Load the incoming component on component initialization.
-   */
-  ngOnInit() {
-    // this.loadComponent();
-  }
-
-  /**
-   * Destroy the component reference when leaving the page.
-   */
-  ngOnDestroy() {
-    this.componentRef.destroy();
-  }
-
-  /**
    * Load the selected component.
    */
   loadComponent() {
-    console.log('loading the component...');
-    if (!this.selectedIndex) { this.selectedIndex = 0; }
-    const selectedComponent = this.dynComponents[this.selectedIndex];
+    const selectedComponent = this.dynComponents[this.selectedIndex - 1];
 
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(selectedComponent.component);
     const viewContainerRef = this.appComponentHost.viewContainerRef;
@@ -51,6 +35,13 @@ export class DynamicContentComponent implements OnInit, OnDestroy, OnChanges {
     this.componentRef = viewContainerRef.createComponent(componentFactory);
     (<DynamicComponent>this.componentRef.instance).data = selectedComponent.data;
 
+  }
+
+  /**
+   * Destroy the component reference when leaving the page.
+   */
+  ngOnDestroy() {
+    this.componentRef.destroy();
   }
 
 }
