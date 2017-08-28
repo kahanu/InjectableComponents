@@ -1,7 +1,16 @@
-{
-    "id": 1,
-    "companyId": 1,
-    "name": "Sam's Notary Service",
-    "address": "7 Geek St, Burbank, CA",
-    "website": "http://www.samsnotary.biz"
-}
+[
+    {
+        "id": 1,
+        "companyId": 1,
+        "name": "Sam's Notary Service",
+        "address": "7 Geek St, Burbank, CA",
+        "website": "http://www.samsnotary.biz"
+    },
+    {
+        "id": 2,
+        "companyId": 2,
+        "name": "Beth's Notary Service",
+        "address": "34 Fiddlestein, Des Moines, IA",
+        "website": "http://www.bethsnotaryservice.org"
+    }
+]

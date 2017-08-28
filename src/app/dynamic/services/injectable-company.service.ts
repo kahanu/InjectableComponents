@@ -1,5 +1,6 @@
+import { NotaryComponent } from 'app/components/notary/notary.component';
+import { DynamicComponent } from 'app/dynamic/dynamic-component';
 import { CustomersComponent } from 'app/components/customers/customers.component';
-import { DynamicComponent } from './../dynamic-component';
 import { Injectable, OnInit } from '@angular/core';
 import { InjectableService } from 'app/dynamic/interfaces/injectable-service';
 import { SalesComponent } from 'app/components/sales/sales.component';
@@ -23,7 +24,8 @@ export class InjectableCompanyService implements InjectableService {
     console.log('company id: ', this._companyId);
     return [
       new DynamicComponent(CustomersComponent, { btnTitle: 'Customers', companyId: this._companyId }),
-      new DynamicComponent(SalesComponent, { btnTitle: 'Sales', companyId: this._companyId })
+      new DynamicComponent(SalesComponent, { btnTitle: 'Sales', companyId: this._companyId }),
+      new DynamicComponent(NotaryComponent, { btnTitle: 'Notary', companyId: this._companyId })
     ];
   }
 

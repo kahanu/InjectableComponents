@@ -21,7 +21,9 @@ export class NotaryComponent implements InjectableComponent, OnInit {
   getNotary() {
     this.jsonService.fetch('/notary.json')
       .subscribe(res => {
-        this.notary = res;
+        this.notary = res.find(item => {
+          return item.companyId === this.data.companyId;
+        });
       });
   }
 
