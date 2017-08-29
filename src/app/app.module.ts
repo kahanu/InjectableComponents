@@ -3,6 +3,8 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -15,15 +17,20 @@ import { BootstrapModalModule } from 'ng2-bootstrap-modal';
 import {
   CustomersComponent,
   SalesComponent,
-  NotaryComponent
+  NotaryComponent,
+  DistributionsComponent
 } from 'app/components/standard';
 import {
   CustomersInjectableComponent,
   NotaryInjectableComponent,
   SalesInjectableComponent
 } from './components/injectable';
-import { ClientModalComponent } from './components/modals';
+import {
+  ClientModalComponent,
+  DistributionsModalComponent
+} from './components/modals';
 import { ClientsComponent } from './components/standard/clients/clients.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -35,7 +42,9 @@ import { ClientsComponent } from './components/standard/clients/clients.componen
     NotaryInjectableComponent,
     SalesInjectableComponent,
     ClientModalComponent,
-    ClientsComponent
+    ClientsComponent,
+    DistributionsComponent,
+    DistributionsModalComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +54,9 @@ import { ClientsComponent } from './components/standard/clients/clients.componen
     CompanyModule,
     CoreModule,
     SharedModule,
-    BootstrapModalModule.forRoot({container: document.body}),
+    BootstrapModalModule.forRoot({ container: document.body }),
+    NgxChartsModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   entryComponents: [
@@ -55,7 +66,8 @@ import { ClientsComponent } from './components/standard/clients/clients.componen
     CustomersInjectableComponent,
     NotaryInjectableComponent,
     SalesInjectableComponent,
-    ClientModalComponent
+    ClientModalComponent,
+    DistributionsModalComponent
   ],
   bootstrap: [AppComponent]
 })

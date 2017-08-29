@@ -1,3 +1,4 @@
+import { DistributionsModalComponent } from './../../components/modals/distributions-modal/distributions-modal.component';
 import { ClientModalComponent } from './../../components/modals/client-modal/client-modal.component';
 import { DynamicComponent } from 'app/dynamic/dynamic-component';
 import { InjectableService } from './../interfaces/injectable-service';
@@ -20,7 +21,8 @@ export class InjectableSupplierService implements InjectableService {
 
   getComponents(): DynamicComponent[] {
     return [
-      new DynamicComponent(ClientModalComponent, { btnTitle: 'Clients', id: this._supplierId })
+      new DynamicComponent(ClientModalComponent, { btnTitle: 'Clients', id: this._supplierId }),
+      new DynamicComponent(DistributionsModalComponent, { btnTitle: 'Distributions', id: this._supplierId })
     ];
   }
 }

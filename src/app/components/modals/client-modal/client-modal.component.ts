@@ -13,30 +13,14 @@ export class ClientModalComponent extends DialogComponent<any, any> implements O
   id: number;
   model: Supplier;
   size = (this.size) ? this.size : 'modal-md';
-  clientModalForm: FormGroup;
-  viewTitle: string;
-  clientList: Company[];
 
   constructor(
-    dialogService: DialogService,
-    private jsonService: JsonApiService) {
+    dialogService: DialogService) {
     super(dialogService);
   }
 
   ngOnInit() {
     console.log('modal id: ', this.id);
-    this.getClients();
-  }
-
-  getClients() {
-    this.jsonService.fetch('/supplier-clients.json')
-      .subscribe(res => {
-        const clients: any[] = res as any[];
-
-        this.clientList = clients.filter(item => {
-          return item.supplierId === this.id;
-        });
-      });
   }
 
   closeDialog() {

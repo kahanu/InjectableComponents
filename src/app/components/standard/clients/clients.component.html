@@ -1,1 +1,11 @@
-<h3>Client Component</h3>
+<h4>Client List</h4>
+<div *ngIf="clientList?.length > 0">
+    <div class="row well well-sm" *ngFor="let client of clientList; let idx = index;">
+        <div class="col-md-12">
+            <h3>{{ client.name }}</h3>
+            <div class="form-group">
+                <label>Sales: </label> {{ client.sales }}
+            </div>
+        </div>
+    </div>
+</div>

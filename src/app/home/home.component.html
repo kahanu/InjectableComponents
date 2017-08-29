@@ -1,37 +1,18 @@
-<!-- <div class="row">
-  <div class="col-md-4">
-    <h1>Company Info</h1>
-    <h2>Acme Widgets, Inc.</h2>
-    <div><b>Sales Rep: </b> Wile E. Coyote</div>
-    <div class="btn-group" role="group">
-      <button type="button" class="btn btn-default" *ngFor="let comp of components; let idx = index;" (click)="select(idx)">{{ comp.data.btnTitle }}</button>
-    </div>
-  </div>
-  <div class="col-md-4">
-     <app-dynamic-content [dynComponents]="components" [selectedIndex]="selectedIndex"></app-dynamic-content> 
-  </div>
-</div> -->
-
-<!-- <div class="row">
-  <div class="col-md-3">
-    <h2>Companies</h2>
-    <div class="company-list">
-       <div class="company" *ngFor="let company of companyList" (click)="selectedCompany(company.id)">{{ company.name }}</div> 
-    </div>
-  </div>
-  <div class="col-md-5">
-    <div *ngIf="showCompany">
-      <h3>{{ company.name }}</h3>
-      <p><b>Sales Rep:</b> {{ company.salesRep }}</p>
-    </div>
-  </div>
-</div> -->
 
 <p>This is an Angular 4.x demo application that demonstrates how to implement dynamic components in your workflow.</p>
 <h3>What are Dynamic Components?</h3>
 <p>Dynamic components is a concept.  It's a way of instantiating a component (that already exists) and injecting it into another component on the fly. </p>
 <h3>Why is this important?  We can already place a component directive in the HTML of another component.</h3>
-<p>This is true, and this is absolutely useful, but what if you need to change the referenced component based on the parent?  You could use an <code>ngSwitch</code> statement, but that can lead to some maintenance.</p>
+<p>This is true, and this is absolutely useful, but what if you need to change the referenced component based on the parent?  
+  You could use an <code>ngSwitch</code> statement, but that can lead to some maintenance.</p>
+<h3>Demo Examples</h3>
+<p>There are two demo examples of how you can use Dynamic Components in Angular 4.x.</p>
+<ol>
+  <li><b>Inline</b> - the <b>Companies</b> area demonstrates how to be able to display the content from several components via a button bar,
+    where the content is shown on the page in a specific area.  This uses the ComponentFactoryResolver class to dynamically resolve the 
+  selected component and place it in a target HTML element.</li>
+  <li><b>Dialog</b> - you can also display dynamic components in a modal dialog as shown in the <b>Suppliers</b> area.</li>
+</ol>
 
 
 
