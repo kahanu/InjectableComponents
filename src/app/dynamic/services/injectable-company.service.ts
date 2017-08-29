@@ -21,7 +21,6 @@ export class InjectableCompanyService implements InjectableService {
   }
 
   getComponents(): DynamicComponent[] {
-    console.log('company id: ', this._companyId);
     return [
       new DynamicComponent(CustomersComponent, { btnTitle: 'Customers', companyId: this._companyId }),
       new DynamicComponent(SalesComponent, { btnTitle: 'Sales', companyId: this._companyId }),

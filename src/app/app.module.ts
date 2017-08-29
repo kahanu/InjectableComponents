@@ -14,13 +14,15 @@ import { ComponentHostDirective } from './dynamic/component-host.directive';
 import { CustomersComponent,
   SalesComponent,
   NotaryComponent } from 'app/components/';
+import { BankInfoComponent } from './components/bank-info/bank-info.component';
 
   @NgModule({
   declarations: [
     AppComponent,
     CustomersComponent,
     SalesComponent,
-    NotaryComponent
+    NotaryComponent,
+    BankInfoComponent
   ],
   imports: [
     BrowserModule,
