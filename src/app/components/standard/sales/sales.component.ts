@@ -8,16 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './sales.component.html',
   styleUrls: ['./sales.component.css']
 })
-export class SalesComponent implements InjectableComponent, OnInit {
-  @Input() data: any;
+export class SalesComponent implements OnInit {
+  @Input() id: number;
   sales: any[];
 
   constructor(private jsonService: JsonApiService) { }
 
   ngOnInit() {
-    console.log('sales data property: ', this.data);
-    // this.item = this.items[0];
-    // console.log('selected sales item: ', this.item);
     this.getSales();
   }
 
@@ -26,7 +23,7 @@ export class SalesComponent implements InjectableComponent, OnInit {
       .subscribe(res => {
         let filteredArray: any[] = [];
         filteredArray = res.filter(item => {
-          return item.companyId === this.data.companyId;
+          return item.companyId === this.id;
         });
         this.sales = filteredArray;
       });

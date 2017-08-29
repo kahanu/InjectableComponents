@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-3">
+    <h2>Suppliers</h2>
+    <div class="company-list">
+      <div class="company" *ngFor="let supplier of supplierList" (click)="selectSupplier(supplier.id)">{{ supplier.name }}</div>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div *ngIf="show">
+      <div>
+        <h3>{{ supplier.name }}</h3>
+        <p><b>Desc:</b> {{ supplier.desc }}</p>
+        <p><b>Address:</b> {{ supplier.address }}</p>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default" *ngFor="let comp of components; let idx = index;" (click)="select(idx, supplier)">{{ comp.data.btnTitle }}</button>
+      </div>
+
+    </div>
+  </div>
+</div>

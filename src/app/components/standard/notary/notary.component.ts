@@ -8,8 +8,8 @@ import { Notary } from 'app/shared/models/models';
   templateUrl: './notary.component.html',
   styleUrls: ['./notary.component.css']
 })
-export class NotaryComponent implements InjectableComponent, OnInit {
-  @Input() data: any;
+export class NotaryComponent implements OnInit {
+  @Input() id: number;
   notary: Notary;
 
   constructor(private jsonService: JsonApiService) { }
@@ -22,7 +22,7 @@ export class NotaryComponent implements InjectableComponent, OnInit {
     this.jsonService.fetch('/notary.json')
       .subscribe(res => {
         this.notary = res.find(item => {
-          return item.companyId === this.data.companyId;
+          return item.companyId === this.id;
         });
       });
   }

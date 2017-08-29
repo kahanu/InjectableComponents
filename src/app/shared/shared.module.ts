@@ -3,11 +3,14 @@ import { DynamicContentComponent } from './../dynamic/dynamic-content/dynamic-co
 import { ComponentHostDirective } from './../dynamic/component-host.directive';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   declarations: [
     ComponentHostDirective,
@@ -17,7 +20,9 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     RouterModule,
     ComponentHostDirective,
-    DynamicContentComponent
+    DynamicContentComponent,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }

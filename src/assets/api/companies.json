@@ -2,29 +2,7 @@
     {
         "id": 1,
         "name": "Acme Widget, LLC.",
-        "salesRep": "Wile E. Coyote, Esq.",
-        "departments": [
-            {
-                "id": 1,
-                "companyId": 1,
-                "name": "Customers"
-            },
-            {
-                "id": 2,
-                "companyId": 1,
-                "name": "Orders"
-            },
-            {
-                "id": 3,
-                "companyId": 1,
-                "name": "Inventory"
-            },
-            {
-                "id": 4,
-                "companyId": 1,
-                "name": "Sales"
-            }
-        ]
+        "salesRep": "Wile E. Coyote, Esq."
     },
     {
         "id": 2,

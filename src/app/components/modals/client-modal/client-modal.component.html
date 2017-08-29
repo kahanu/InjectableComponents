@@ -1,0 +1,26 @@
+<div class="modal-dialog {{ size }}">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" (click)="closeDialog()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <h4 class="modal-title">{{ model.name }}</h4>
+    </div>
+    <div class="modal-body">
+      <div *ngIf="clientList?.length > 0">
+        <div class="row well well-sm" *ngFor="let client of clientList; let idx = index;">
+          <div class="col-md-12">
+            <h3>{{ client.name }}</h3>
+            <div class="form-group">
+              <label>Sales: </label> {{ client.sales }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" (click)="closeDialog()">Close</button>
+    </div>
+  </div>
+</div>

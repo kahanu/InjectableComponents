@@ -6,7 +6,8 @@ const routes: Routes = [
   {
     path: '', component: HomeComponent
   },
-  { path: 'company', loadChildren: 'app/company/company.module#CompanyModule' }
+  { path: 'companies', loadChildren: 'app/company/company.module#CompanyModule' },
+  { path: 'suppliers', loadChildren: 'app/suppliers/suppliers.module#SuppliersModule' }
 ];
 
 @NgModule({

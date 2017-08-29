@@ -35,18 +35,15 @@ export class CompanyComponent implements OnInit {
   getComponents(id: number) {
     this.injectableCompanyService.companyId = id;
     this.components = this.injectableCompanyService.getComponents();
-    console.log('components: ', this.components);
   }
 
   selectCompany(id: number) {
     this.selectedIndex = undefined;
-    console.log('id: ', id);
     this.company = this.companyList.find(item => {
       return item.id === id;
     });
 
     if (this.company) {
-      console.log('hi');
       this.getComponents(this.company.id);
       this.showCompany = true;
     }

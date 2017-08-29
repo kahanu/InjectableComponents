@@ -4,6 +4,13 @@ export class Company {
     salesRep: string;
 }
 
+export class Supplier {
+    id: any;
+    name: string;
+    desc: string;
+    address: string;
+}
+
 export class ChildItem {
     companyId: number;
     h1: string;

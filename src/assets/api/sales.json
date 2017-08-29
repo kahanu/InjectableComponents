@@ -32,7 +32,7 @@
     {
         "id": 6,
         "companyId": 2,
-        "name": "Kevlar Batarangs",
+        "name": "Kevlar Chest plates",
         "sales": "20"
     },
     {
@@ -46,6 +46,12 @@
         "companyId": 2,
         "name": "Web Juice",
         "sales": "8 gallons"
+    },
+    {
+        "id": 9,
+        "companyId": 2,
+        "name": "Trip wire - 100 feet",
+        "sales": "4"
     }
 
 ]

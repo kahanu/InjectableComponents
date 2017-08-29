@@ -1,9 +1,9 @@
-import { NotaryComponent } from 'app/components/notary/notary.component';
+import { CustomersInjectableComponent,
+  SalesInjectableComponent,
+  NotaryInjectableComponent } from 'app/components/injectable';
 import { DynamicComponent } from 'app/dynamic/dynamic-component';
-import { CustomersComponent } from 'app/components/customers/customers.component';
 import { Injectable, OnInit } from '@angular/core';
 import { InjectableService } from 'app/dynamic/interfaces/injectable-service';
-import { SalesComponent } from 'app/components/sales/sales.component';
 
 @Injectable()
 export class InjectableCompanyService implements InjectableService {
@@ -22,9 +22,9 @@ export class InjectableCompanyService implements InjectableService {
 
   getComponents(): DynamicComponent[] {
     return [
-      new DynamicComponent(CustomersComponent, { btnTitle: 'Customers', companyId: this._companyId }),
-      new DynamicComponent(SalesComponent, { btnTitle: 'Sales', companyId: this._companyId }),
-      new DynamicComponent(NotaryComponent, { btnTitle: 'Notary', companyId: this._companyId })
+      new DynamicComponent(CustomersInjectableComponent, { btnTitle: 'Customers', id: this._companyId }),
+      new DynamicComponent(SalesInjectableComponent, { btnTitle: 'Sales', id: this._companyId }),
+      new DynamicComponent(NotaryInjectableComponent, { btnTitle: 'Notary', id: this._companyId })
     ];
   }
 

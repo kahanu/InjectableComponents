@@ -8,14 +8,13 @@ import { ChildItem } from 'app/shared/models/models';
   templateUrl: './customers.component.html',
   styleUrls: ['./customers.component.css']
 })
-export class CustomersComponent implements InjectableComponent, OnInit {
-  @Input() data: any;
+export class CustomersComponent implements OnInit {
+  @Input() id: number;
   customerList: any[];
 
   constructor(private jsonService: JsonApiService) { }
 
   ngOnInit() {
-    console.log('customers data property: ', this.data);
     this.getCustomers();
   }
 
@@ -24,7 +23,7 @@ export class CustomersComponent implements InjectableComponent, OnInit {
       .subscribe(res => {
         let filteredArray: any[] = [];
         filteredArray = res.filter(item => {
-          return item.companyId === this.data.companyId;
+          return item.companyId === this.id;
         });
         this.customerList = filteredArray;
       });
