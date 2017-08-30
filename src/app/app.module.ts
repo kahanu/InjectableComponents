@@ -1,3 +1,4 @@
+import { SuppliersModule } from './suppliers/suppliers.module';
 import { CompanyModule } from './company/company.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
@@ -57,6 +58,8 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     BootstrapModalModule.forRoot({ container: document.body }),
     NgxChartsModule,
     BrowserAnimationsModule,
+    SuppliersModule,
+    CompanyModule,
     AppRoutingModule
   ],
   entryComponents: [
