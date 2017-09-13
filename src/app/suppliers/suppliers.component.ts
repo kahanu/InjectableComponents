@@ -62,11 +62,7 @@ export class SuppliersComponent implements OnInit {
       model: supplier
     };
 
-    const options = {
-      backdropColor: 'rgba(0, 0, 0, 0.5)'
-    };
-
-    const disposable = this.dialog.addDialog(component.component, wrapper, options)
+    const disposable = this.dialog.addDialog(component.component, wrapper)
       .subscribe(res => {
 
       });
