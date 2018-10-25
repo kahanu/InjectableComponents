@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href /InjectableComponents/ && gh-pages -d dist"
+    "deploy": "ng build --prod --aot=false --base-href /InjectableComponents/ && gh-pages -d dist"
   },
   "homepage": "https://kahanu.github.io/injectablecomponents/",
   "private": true,

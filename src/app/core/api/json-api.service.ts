@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/delay';
 import 'rxjs/add/operator/do';
+import { environment } from 'environments/environment';
 
 @Injectable()
 export class JsonApiService {
@@ -14,7 +15,7 @@ export class JsonApiService {
   constructor(private http: Http) {}
 
   public fetch(url): Observable<any> {
-    return this.http.get(this.getBaseUrl() + config.API_URL + url)
+    return this.http.get(environment.Api + url)
       .delay(100)
       .map(this.extractData)
       .catch(this.handleError);
