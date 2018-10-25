@@ -1,6 +1,21 @@
 <div class="row">
   <div class="col-md-12">
     <p>This demonstrates the use of Injectable Components from an array of components being injected into the view.</p>
+    <p>The list of links on the left are generated from JSON data that could be returned from a database.
+      When you click one of the items, the database data for that component will be displayed in the view.  Below the information about the app-company
+      is a button group.  These buttons are dynamically generated from the list of dynamic components!
+    </p>
+    <p>When one of the buttons is clicked, it loads that component into the view dynamically!  And when another button is clicked,
+        the component for that button will be displayed in that same position, with different content.</p>
+        <p>It's important to understand a couple important points here:</p>
+        <ol>
+          <li><b>Easy Maintenance</b> - the button group is generated from the list of dynamic components.  That means if you need to show some new content,
+            like "Expenses", you just need to create the Expenses component, add it to the list of dynamic components, and the button will add itself.
+          </li>
+          <li><b>Any Content</b> - you'll notice that each of the components (Customers, Sales, Notary) contain different data and in different visual formats.  Each component does not
+            have to be exactly the same as the others.  You can display anything you want.
+          </li>
+        </ol>
   </div>
 </div>
 <div class="row">

@@ -1,6 +1,6 @@
 import { ComponentHostDirective } from './../component-host.directive';
 import { DynamicComponent } from './../dynamic-component';
-import { Component, OnInit, Input, ViewChild, ComponentRef, ComponentFactoryResolver, OnDestroy, OnChanges } from '@angular/core';
+import { Component, Input, ViewChild, ComponentRef, ComponentFactoryResolver, OnDestroy, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-dynamic-content',

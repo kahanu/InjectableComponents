@@ -1,7 +1,5 @@
 import { JsonApiService } from 'app/core/api/json-api.service';
-import { InjectableComponent } from 'app/dynamic/interfaces/injectable-component';
 import { Component, OnInit, Input } from '@angular/core';
-import { ChildItem } from 'app/shared/models/models';
 
 @Component({
   selector: 'app-customers',
