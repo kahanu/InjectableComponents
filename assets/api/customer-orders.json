@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "companyId": 1,
+        "name": "Scoundrel Rat",
+        "address": "Hidden Canyon, UT",
+        "orders": [
+            {
+                "id": 1,
+                "customerId": 1,
+                "name": "Dynamite sticks",
+                "quantity": 300,
+                "price": 1400
+            },
+            {
+                "id": 2,
+                "customerId": 1,
+                "name": "Black Power Kegs",
+                "quantity": 20,
+                "price": 800
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "companyId": 7,
+        "name": "Yellow Belly Sapsucker",
+        "address": "Chicken Flats, AZ"
+    },
+    {
+        "id": 3,
+        "companyId": 2,
+        "name": "Diamond Back Bill",
+        "address": "Bubbling Pots, Tx",
+        "orders": [
+            {
+                "id": 3,
+                "customerId": 3,
+                "name": "Trip wire - 100 Ft",
+                "quantity": 4,
+                "price": 79.95
+            },
+            {
+                "id": 4,
+                "customerId": 3,
+                "name": "Exploding Boulders",
+                "quantity": 3,
+                "price": 75
+            },
+            {
+                "id": 5,
+                "customerId": 3,
+                "name": "Long range Blunderbus",
+                "quantity": 1,
+                "price": 480.50
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "companyId": 7,
+        "name": "Lucy Goose",
+        "address": "Chapparal, NM"
+    },
+    {
+        "id": 5,
+        "companyId": 3,
+        "name": "Smoke Man",
+        "address": "Cloud City, NJ"
+    },
+    {
+        "id": 6,
+        "companyId": 4,
+        "name": "The Silver Blade",
+        "address": "Sharpton, NH"
+    },
+    {
+        "id": 7,
+        "companyId": 4,
+        "name": "Dyna-guy",
+        "address": "Brooklyn, NY"
+    },
+    {
+        "id": 8,
+        "companyId": 12,
+        "name": "Thunder Thighs",
+        "address": "Palm Beach, FL"
+    },
+    {
+        "id": 9,
+        "companyId": 94,
+        "name": "The Somnambulist",
+        "address": "Sleepyville, OR"
+    }
+]

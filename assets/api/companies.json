@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Acme Widget, LLC.",
+        "salesRep": "Wile E. Coyote, Esq."
+    },
+    {
+        "id": 2,
+        "name": "Super Hero Surplus Outlet",
+        "salesRep": "Ned Lander"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Allied Dynamite Manufacturing, LLC",
+        "desc": "Most excellent exploding sticks.",
+        "address": "100 W. Main St. Oily Creek, MN"
+    },
+    {
+        "id": 2,
+        "name": "Premier Kevlar",
+        "desc": "Protect your body with state-of-the-art fashions.",
+        "address": "1234 First St, Suite 3, Stantonville, OH"
+    },
+    {
+        "id": 3,
+        "name": "Let's Rock!",
+        "desc": "Fool proof exploding geology.",
+        "address": "PO Box 13, Wilmington, DE"
+    },
+    {
+        "id": 4,
+        "name": "Jettison Wear",
+        "desc": "The finest jet-propulsion wear on the planet.",
+        "address": "808 Planet way, Cape Canaveral, FL"
+    },
+    {
+        "id": 5,
+        "name": "Entwined",
+        "desc": "Ropes and twine in any length or tensil strength.",
+        "address": "844 Lago Dr, La Quinta, CA"
+    },
+    {
+        "id": 6,
+        "name": "Snagged",
+        "desc": "Trip wire, bear traps and other goodies.",
+        "address": "109 Laseldorf, Germany"
+    }
+]

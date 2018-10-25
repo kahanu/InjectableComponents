@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "companyId": 1,
+        "name": "AM/PM",
+        "address": "First and Main St, Brownsville, TX",
+        "longitude": "",
+        "latitude": ""
+    },
+    {
+        "id": 2,
+        "companyId": 1,
+        "name": "Ned's Roadside Explosives",
+        "address": "Deep Canyon Cross-roads, Stovepipe, AR",
+        "longitude": "",
+        "latitude": ""
+    },
+    {
+        "id": 3,
+        "companyId": 1,
+        "name": "Shirley's Novelties",
+        "address": "145 Williams Circle, Double Fork, UT",
+        "longitude": "",
+        "latitude": ""
+    },
+    {
+        "id": 4,
+        "companyId": 2,
+        "name": "Sherman's Comics",
+        "address": "392 Milrose, Hollywood, CA",
+        "longitude": "",
+        "latitude": ""
+    },
+    {
+        "id": 5,
+        "companyId": 2,
+        "name": "Kingsman Suits",
+        "address": "493 5th Ave, New York, NY",
+        "longitude": "",
+        "latitude": ""
+    }
+]

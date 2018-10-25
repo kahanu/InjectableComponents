@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "supplierId": 1,
+        "name": "Acme Widget, LLC",
+        "sales": "$14,392"
+    },
+    {
+        "id": 2,
+        "supplierId": 2,
+        "name": "Super Hero Surplus Outlet",
+        "sales": "$95,328"
+    },
+    {
+        "id": 3,
+        "supplierId": 3,
+        "name": "Acme Widget, LLC",
+        "sales": "$695"
+    },
+    {
+        "id": 4,
+        "supplierId": 4,
+        "name": "Super Hero Surplus Outlet",
+        "sales": "$1,200"
+    },
+    {
+        "id": 5,
+        "supplierId": 5,
+        "name": "Acme Widget, LLC",
+        "sales": "$3,293"
+    },
+    {
+        "id": 6,
+        "supplierId": 6,
+        "name": "Super Hero Surplus Outlet",
+        "sales": "$493"
+    },
+    {
+        "id": 7,
+        "supplierId": 6,
+        "name": "Acme Widget, LLC",
+        "sales": "$887"
+    }
+]
