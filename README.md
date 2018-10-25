@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This is a reference application that demonstrates how to dynamically inject components into the view.
 
-You can see a working demo at [Github Pages](https://kahanu.github.io/injectablecomponents/).
+You can see a working demo at [Github Pages](https://kahanu.github.io/InjectableComponents/).
 
 The Company and Suppliers are the launching point for the two scenarios.
 
