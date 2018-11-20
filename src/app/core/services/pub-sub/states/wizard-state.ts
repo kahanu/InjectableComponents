@@ -13,4 +13,5 @@ export class WizardState {
   customer: Customer;
   contact: Contact;
   skills: Array<string>;
+  step = 1;
 }

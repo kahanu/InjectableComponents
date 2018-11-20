@@ -7,6 +7,7 @@ import { JsonApiService } from './api/json-api.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InjectableWizardService } from 'app/dynamic/services/injectable-wizard.service';
+import { PubSubService } from './services/pub-sub/pub-sub.service';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { InjectableWizardService } from 'app/dynamic/services/injectable-wizard.
     InjectableCompanyService,
     InjectableSupplierService,
     InjectableWizardService,
-    SuppliersService
+    SuppliersService,
+    PubSubService
   ]
 })
 export class CoreModule { }

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { PubSubService } from 'app/core/services/pub-sub/pub-sub.service';
+import { WizardState } from 'app/core/services/pub-sub/states/wizard-state';
 
 @Component({
   selector: 'app-customer-info',
@@ -9,6 +10,7 @@ import { PubSubService } from 'app/core/services/pub-sub/pub-sub.service';
 })
 export class CustomerInfoComponent implements OnInit {
   form: FormGroup;
+  @Output() onForm = new EventEmitter<FormGroup>();
 
   constructor(private fb: FormBuilder, private pubSub: PubSubService) { }
 
@@ -22,6 +24,14 @@ export class CustomerInfoComponent implements OnInit {
       lastName: [''],
       city: ['']
     });
+  }
+
+  next() {
+    const state = new WizardState();
+    state.customer = this.form.value;
+    state.step = 2;
+
+    this.pubSub.publishWizard(state);
   }
 
 }

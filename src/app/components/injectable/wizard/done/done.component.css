@@ -1,0 +1,8 @@
+.done-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.done-block div {
+  margin-right: 20px;
+}

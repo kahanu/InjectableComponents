@@ -2,5 +2,27 @@
   <div class="col-md-6">
     <h2>Success!</h2>
     <p>You have successfully completed the wizard.</p>
+    <div class="done-block">
+      <div>
+        <h3>Customer Info</h3>
+        {{ wizardState.customer.firstName }} {{ wizardState.customer.lastName
+        }}<br />
+        {{ wizardState.customer.city }}
+      </div>
+      <div>
+        <h3>Contact Info</h3>
+        <div><label>Email: </label> {{ wizardState.contact.email }}</div>
+        <div><label>Phone: </label> {{ wizardState.contact.phone }}</div>
+      </div>
+      <div>
+        <h3>Skills</h3>
+        <ul>
+          <li *ngFor="let skill of wizardState.skills">{{ skill }}</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="btn btn-default" (click)="back()">Back</button>
+    </div>
   </div>
 </div>
