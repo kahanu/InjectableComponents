@@ -6,6 +6,7 @@ import { HomeService } from './../home/home.service';
 import { JsonApiService } from './api/json-api.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { InjectableWizardService } from 'app/dynamic/services/injectable-wizard.service';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { CommonModule } from '@angular/common';
     CompanyService,
     InjectableCompanyService,
     InjectableSupplierService,
+    InjectableWizardService,
     SuppliersService
   ]
 })

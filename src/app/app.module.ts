@@ -32,6 +32,11 @@ import {
 } from './components/modals';
 import { ClientsComponent } from './components/standard/clients/clients.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { WizardModule } from './wizard/wizard.module';
+import { CustomerInfoComponent } from './components/injectable/wizard/customer-info/customer-info.component';
+import { SkillsComponent } from './components/injectable/wizard/skills/skills.component';
+import { ContactInfoComponent } from './components/injectable/wizard/contact-info/contact-info.component';
+import { DoneComponent } from './components/injectable/wizard/done/done.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +50,11 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     ClientModalComponent,
     ClientsComponent,
     DistributionsComponent,
-    DistributionsModalComponent
+    DistributionsModalComponent,
+    CustomerInfoComponent,
+    SkillsComponent,
+    ContactInfoComponent,
+    DoneComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +68,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     NgxChartsModule,
     BrowserAnimationsModule,
     SuppliersModule,
-    CompanyModule,
+    WizardModule,
     AppRoutingModule
   ],
   entryComponents: [
@@ -70,7 +79,11 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     NotaryInjectableComponent,
     SalesInjectableComponent,
     ClientModalComponent,
-    DistributionsModalComponent
+    DistributionsModalComponent,
+    CustomerInfoComponent,
+    ContactInfoComponent,
+    SkillsComponent,
+    DoneComponent
   ],
   bootstrap: [AppComponent]
 })
